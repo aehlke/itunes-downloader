@@ -164,6 +164,7 @@ def main():
     #for playlist_file in glob(download_dir_path + '*.m3u'):
     #    os.remove(playlist_file)
     #    i += 1
+    print 'Deleting any playlist files...'
     i = 0
     for root, dirnames, filenames in os.walk(download_dir_path):
         for filename in fnmatch.filter(filenames, '*.m3u'):

@@ -2,13 +2,13 @@
 {
 	089C165DFE840E0CC02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
+			sepNavIntBoundsRect = "{{0, 0}, {519, 228}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 100}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = B87CEE7C1108407800C4D1EA /* iTunes Loader */;
 		activeTarget = 8D1107260486CEB800E47090 /* iTunes Loader */;
 		addToTargets = (
@@ -105,7 +105,7 @@
 					20,
 					317,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -148,6 +148,19 @@
 		};
 		perUserProjectItems = {
 			B82BC09411B2D0A200C8B0FE /* PlistBookmark */ = B82BC09411B2D0A200C8B0FE /* PlistBookmark */;
+			B82BC0D111B2DA7C00C8B0FE /* PlistBookmark */ = B82BC0D111B2DA7C00C8B0FE /* PlistBookmark */;
+			B82BC0F311B2DBDB00C8B0FE /* PlistBookmark */ = B82BC0F311B2DBDB00C8B0FE /* PlistBookmark */;
+			B82BC0FD11B2DD7900C8B0FE /* PlistBookmark */ = B82BC0FD11B2DD7900C8B0FE /* PlistBookmark */;
+			B82BC12411B2E17A00C8B0FE /* PBXTextBookmark */ = B82BC12411B2E17A00C8B0FE /* PBXTextBookmark */;
+			B82BC12511B2E17A00C8B0FE /* PBXTextBookmark */ = B82BC12511B2E17A00C8B0FE /* PBXTextBookmark */;
+			B82BC12611B2E17A00C8B0FE /* PBXTextBookmark */ = B82BC12611B2E17A00C8B0FE /* PBXTextBookmark */;
+			B82BC12711B2E17A00C8B0FE /* PBXTextBookmark */ = B82BC12711B2E17A00C8B0FE /* PBXTextBookmark */;
+			B82BC12811B2E17A00C8B0FE /* PBXTextBookmark */ = B82BC12811B2E17A00C8B0FE /* PBXTextBookmark */;
+			B82BC12911B2E17A00C8B0FE /* PlistBookmark */ = B82BC12911B2E17A00C8B0FE /* PlistBookmark */;
+			B82BC12A11B2E17A00C8B0FE /* PlistBookmark */ = B82BC12A11B2E17A00C8B0FE /* PlistBookmark */;
+			B82BC13B11B2E27A00C8B0FE /* PBXTextBookmark */ = B82BC13B11B2E27A00C8B0FE /* PBXTextBookmark */;
+			B82BC13C11B2E27A00C8B0FE /* PlistBookmark */ = B82BC13C11B2E27A00C8B0FE /* PlistBookmark */;
+			B82BC13D11B2E27A00C8B0FE /* PlistBookmark */ = B82BC13D11B2E27A00C8B0FE /* PlistBookmark */;
 			B87CEEA41108433F00C4D1EA = B87CEEA41108433F00C4D1EA /* PBXTextBookmark */;
 			B87CEEB4110843DC00C4D1EA = B87CEEB4110843DC00C4D1EA /* PBXTextBookmark */;
 			B87CEEB5110843DC00C4D1EA = B87CEEB5110843DC00C4D1EA /* PBXTextBookmark */;
@@ -183,9 +196,9 @@
 	};
 	7790198E0C07548A00326F66 /* itunesloaderAppDelegate.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 286}}";
+			sepNavIntBoundsRect = "{{0, 0}, {519, 637}}";
 			sepNavSelRange = "{593, 0}";
-			sepNavVisRange = "{32, 561}";
+			sepNavVisRange = "{142, 459}";
 		};
 	};
 	8D1107260486CEB800E47090 /* iTunes Loader */ = {
@@ -206,6 +219,153 @@
 		isK = 0;
 		kPath = (
 			CFBundleIconFile,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC0D111B2DA7C00C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC0EE11B2DBC900C8B0FE /* Build DMG */ = {
+		activeExec = 0;
+	};
+	B82BC0F311B2DBDB00C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC0FD11B2DD7900C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC12411B2E17A00C8B0FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */;
+		name = "addToITunesLibrary: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 178;
+		vrLoc = 0;
+	};
+	B82BC12511B2E17A00C8B0FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */;
+		name = "downloadtoitunes.py: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 328;
+		vrLoc = 0;
+	};
+	B82BC12611B2E17A00C8B0FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B87CEEC411084C0A00C4D1EA /* e */;
+		name = "e: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 821;
+		vrLoc = 0;
+	};
+	B82BC12711B2E17A00C8B0FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7790198E0C07548A00326F66 /* itunesloaderAppDelegate.py */;
+		name = "itunesloaderAppDelegate.py: 26";
+		rLen = 0;
+		rLoc = 593;
+		rType = 0;
+		vrLen = 459;
+		vrLoc = 142;
+	};
+	B82BC12811B2E17A00C8B0FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 100;
+		vrLoc = 0;
+	};
+	B82BC12911B2E17A00C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC12A11B2E17A00C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC13B11B2E27A00C8B0FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 100;
+		vrLoc = 0;
+	};
+	B82BC13C11B2E27A00C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	B82BC13D11B2E27A00C8B0FE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
 		);
 		name = /Users/jehlke/workspace/pyobjc/itunesloader/Info.plist;
 		rLen = 0;
@@ -304,6 +464,27 @@
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 32;
+	};
+	B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 228}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 178}";
+		};
+	};
+	B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 2639}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 328}";
+		};
+	};
+	B87CEEC411084C0A00C4D1EA /* e */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {642, 1690}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 821}";
+		};
 	};
 	B87CEED21109094F00C4D1EA /* PlistBookmark */ = {
 		isa = PlistBookmark;

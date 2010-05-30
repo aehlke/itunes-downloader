@@ -6,6 +6,20 @@
 	objectVersion = 44;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B82BC0EE11B2DBC900C8B0FE /* Build DMG */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B82BC0F411B2DBDB00C8B0FE /* Build configuration list for PBXAggregateTarget "Build DMG" */;
+			buildPhases = (
+				B82BC0ED11B2DBC900C8B0FE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build DMG";
+			productName = "Build DMG";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		77631A270C06C501005415CB /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77631A260C06C501005415CB /* Python.framework */; };
 		77631A3F0C0748CF005415CB /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 77631A3E0C0748CF005415CB /* main.py */; };
@@ -14,6 +28,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B82BC10F11B2E07100C8B0FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B82BC10E11B2E07100C8B0FE /* icon.png */; };
+		B82BC13211B2E1A700C8B0FE /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B82BC13111B2E1A700C8B0FE /* icon.icns */; };
 		B87CEEC511084C0A00C4D1EA /* addToITunesLibrary in Resources */ = {isa = PBXBuildFile; fileRef = B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */; };
 		B87CEEC611084C0A00C4D1EA /* downloadtoitunes.py in Resources */ = {isa = PBXBuildFile; fileRef = B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */; };
 		B87CEEC711084C0A00C4D1EA /* e in Resources */ = {isa = PBXBuildFile; fileRef = B87CEEC411084C0A00C4D1EA /* e */; };
@@ -33,6 +49,8 @@
 		77C8C1F80C07829500965286 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Download to iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Download to iTunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82BC10E11B2E07100C8B0FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B82BC13111B2E1A700C8B0FE /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addToITunesLibrary; sourceTree = "<group>"; };
 		B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = downloadtoitunes.py; sourceTree = "<group>"; };
 		B87CEEC411084C0A00C4D1EA /* e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = e; sourceTree = "<group>"; };
@@ -89,6 +107,7 @@
 		29B97314FDCFA39411CA2CEA /* itunesloader */ = {
 			isa = PBXGroup;
 			children = (
+				B82BC13111B2E1A700C8B0FE /* icon.icns */,
 				B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */,
 				B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */,
 				B87CEEC411084C0A00C4D1EA /* e */,
@@ -114,6 +133,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B82BC10E11B2E07100C8B0FE /* icon.png */,
 				77C8C1F70C07829500965286 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -164,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* iTunes Loader */,
+				B82BC0EE11B2DBC900C8B0FE /* Build DMG */,
 			);
 		};
 /* End PBXProject section */
@@ -180,10 +201,28 @@
 				B87CEEC511084C0A00C4D1EA /* addToITunesLibrary in Resources */,
 				B87CEEC611084C0A00C4D1EA /* downloadtoitunes.py in Resources */,
 				B87CEEC711084C0A00C4D1EA /* e in Resources */,
+				B82BC10F11B2E07100C8B0FE /* icon.png in Resources */,
+				B82BC13211B2E1A700C8B0FE /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B82BC0ED11B2DBC900C8B0FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
@@ -216,6 +255,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B82BC0EF11B2DBCA00C8B0FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build DMG";
+			};
+			name = Debug;
+		};
+		B82BC0F011B2DBCA00C8B0FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build DMG";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,7 +303,7 @@
 				GCC_PREFIX_HEADER = itunesloader_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = itunesloader;
+				PRODUCT_NAME = "Download to iTunes";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -276,6 +336,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B82BC0F411B2DBDB00C8B0FE /* Build configuration list for PBXAggregateTarget "Build DMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82BC0EF11B2DBCA00C8B0FE /* Debug */,
+				B82BC0F011B2DBCA00C8B0FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iTunes Loader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
