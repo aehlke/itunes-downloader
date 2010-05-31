@@ -11,7 +11,7 @@ from os import path, environ, makedirs
 APP_NAME = "Download To iTunes"
 CONFIG_FILENAME = 'config.cfg'
 
-DEFAULTS = {'iTunesManagesMyLibrary': 1}
+DEFAULTS = {'iTunesManagesMyLibrary': 1, 'iTunesLibraryLocation': None}
 
 def data_path():
     #if sys.platform == 'darwin':

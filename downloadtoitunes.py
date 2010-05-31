@@ -10,6 +10,7 @@ import subprocess
 import fnmatch
 import tempfile
 
+import config
 
 #cwd = os.getcwd()
 
@@ -134,7 +135,13 @@ def main():
     
     # initialize the download directory
     print 'Initializing...'
-    download_dir_path = tempfile.mkdtemp(prefix='tmp3')
+    
+    if config.get_config_option('iTunesManagesMyLibrary') \
+            or not config.get_config_option('iTunesLibraryLocation') \
+            or not os.path.exists(config.get_config_options('iTunesLibraryLocation')):
+        download_dir_path = tempfile.mkdtemp(prefix='tmp3')
+    else:
+        download_dir_path = config.get_config_option('iTunesLibraryLocation')
 
     # download the archive
     print 'Downloading archive...'
@@ -143,6 +150,13 @@ def main():
 
     # extract it, using the 'e' ruby script, to the download directory
     print 'Extracting archive...'
+    if not config.get_config_option('iTunesManagesMyLibrary'):
+        # move the archive into a subdir first in case it doesn't contain a directory
+        new_dir_path = os.splitext(archive_path)[0]
+        os.makedirs(new_dir_path)
+        shutil.move(archive_path, new_dir_path)
+        archive_path = os.path.join(new_dir_path, archive_name)
+
     try:
         ret_code = subprocess.call('"'+os.path.join(cwd, 'e')+'"' +\
                 ' ' + archive_name, cwd=download_dir_path, shell=True)
@@ -159,6 +173,7 @@ def main():
     print 'Deleting archive...'
     os.remove(archive_path)
 
+
     # delete any m3u playlist files, to avoid duplication
     #FIXME
     #for playlist_file in glob(download_dir_path + '*.m3u'):
@@ -166,19 +181,36 @@ def main():
     #    i += 1
     print 'Deleting any playlist files...'
     i = 0
+    if config.get_config_option('iTunesManagesMyLibrary'):
+        target_path = download_dir_path
+    else:
+        target_path = new_dir_path
     for root, dirnames, filenames in os.walk(download_dir_path):
         for filename in fnmatch.filter(filenames, '*.m3u'):
             os.remove(os.path.join(root, filename))
             i += 1
     print '({0} deleted)'.format(i)
 
+
     # add all files in the 'downloading' dir to iTunes
     print 'Adding to iTunes Library...'
-    add_directory_to_itunes(cwd, download_dir_path)
+    if not config.get_config_option('iTunesManagesMyLibrary'):
+        # if the archive extracted into a directory, move that to the download dir.
+        # if not, and there are files in here, use this as the album directory and add it
+        if len([f for f in os.listdir(new_dir_path)]) <= 1:
+            for f in os.listdir(new_dir_path):
+                shutil.move(os.path.join(new_dir_path, f), download_dir_path)
+                add_directory_to_itunes(cwd, os.path.join(download_dir_path, f))
+            shutil.rmtree(new_dir_path)
+        else:
+            add_directory_to_itunes(cwd, new_dir_path)
+    else:
+        add_directory_to_itunes(cwd, download_dir_path)
     
     # delete the downloaded files
     print 'Cleaning up...'
-    shutil.rmtree(download_dir_path)
+    if config.get_config_option('iTunesManagesMyLibrary'):
+        shutil.rmtree(download_dir_path)
 
     print 'Done!'
 

@@ -60,10 +60,10 @@ class itunesloaderAppDelegate(NSObject):
         # download the archive and add to itunes
         pboardString = pboard.stringForType_(NSStringPboardType)
 
-        iTunesManagesMyLibrary = config.get_config_option('iTunesManagesMyLibrary')
-        NSLog(str(iTunesManagesMyLibrary))
+        #iTunesManagesMyLibrary = config.get_config_option('iTunesManagesMyLibrary')
+        #NSLog(str(iTunesManagesMyLibrary))
         #NSLog(dir(controller).__repr__())
-        return
+        #return
         
         #NSLog(pboardString)
         #NSLog(u'%s' % pboardString)
