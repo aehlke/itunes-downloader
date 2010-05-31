@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="453"/>
+			<integer value="29"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -58,7 +58,7 @@
 						</object>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="110575045">
-							<string key="NSTitle">itunesloader</string>
+							<string key="NSTitle">Download to iTunes</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="238522557">
@@ -91,7 +91,7 @@
 									<reference key="NSOnImage" ref="715147791"/>
 									<reference key="NSMixedImage" ref="897496305"/>
 								</object>
-								<object class="NSMenuItem" id="493771298">
+								<object class="NSMenuItem" id="501544025">
 									<reference key="NSMenu" ref="110575045"/>
 									<string key="NSTitle">Preferences</string>
 									<string key="NSKeyEquiv"/>
@@ -99,12 +99,12 @@
 									<reference key="NSOnImage" ref="715147791"/>
 									<reference key="NSMixedImage" ref="897496305"/>
 									<string key="NSAction">submenuAction:</string>
-									<object class="NSMenu" key="NSSubmenu" id="269324606">
+									<object class="NSMenu" key="NSSubmenu" id="631738477">
 										<string key="NSTitle">Menu</string>
 										<object class="NSMutableArray" key="NSMenuItems">
 											<bool key="EncodedWithXMLCoder">YES</bool>
-											<object class="NSMenuItem" id="1063068003">
-												<reference key="NSMenu" ref="269324606"/>
+											<object class="NSMenuItem" id="329557607">
+												<reference key="NSMenu" ref="631738477"/>
 												<string key="NSTitle">iTunes manages my library</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
@@ -112,8 +112,8 @@
 												<reference key="NSOnImage" ref="715147791"/>
 												<reference key="NSMixedImage" ref="897496305"/>
 											</object>
-											<object class="NSMenuItem" id="1023961764">
-												<reference key="NSMenu" ref="269324606"/>
+											<object class="NSMenuItem" id="659891338">
+												<reference key="NSMenu" ref="631738477"/>
 												<string key="NSTitle">Set iTunes library location...</string>
 												<string key="NSKeyEquiv"/>
 												<int key="NSMnemonicLoc">2147483647</int>
@@ -215,6 +215,8 @@
 					</object>
 					<object class="NSMenuItem" id="391199113">
 						<reference key="NSMenu" ref="649796088"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<bool key="NSIsHidden">YES</bool>
 						<string key="NSTitle">Help</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSKeyEquivModMask">1048576</int>
@@ -228,6 +230,8 @@
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="238773614">
 									<reference key="NSMenu" ref="374024848"/>
+									<bool key="NSIsDisabled">YES</bool>
+									<bool key="NSIsHidden">YES</bool>
 									<string key="NSTitle">itunesloader Help</string>
 									<string key="NSKeyEquiv">?</string>
 									<int key="NSKeyEquivModMask">1048576</int>
@@ -264,7 +268,7 @@
 			<object class="NSCustomObject" id="15635064">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSCustomObject" id="288178953">
+			<object class="NSCustomObject" id="162169812">
 				<string key="NSClassName">controller</string>
 			</object>
 		</object>
@@ -330,19 +334,19 @@
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">toggleITunesManagesMyLibrary:</string>
-						<reference key="source" ref="288178953"/>
-						<reference key="destination" ref="1063068003"/>
+						<reference key="source" ref="162169812"/>
+						<reference key="destination" ref="329557607"/>
 					</object>
 					<int key="connectionID">457</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: iTunesManagesMyLibrary</string>
-						<reference key="source" ref="1063068003"/>
-						<reference key="destination" ref="288178953"/>
+						<reference key="source" ref="329557607"/>
+						<reference key="destination" ref="162169812"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="1063068003"/>
-							<reference key="NSDestination" ref="288178953"/>
+							<reference key="NSSource" ref="329557607"/>
+							<reference key="NSDestination" ref="162169812"/>
 							<string key="NSLabel">value: iTunesManagesMyLibrary</string>
 							<string key="NSBinding">value</string>
 							<string key="NSKeyPath">iTunesManagesMyLibrary</string>
@@ -354,35 +358,35 @@
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">iTunesManagesMyLibraryMenuItem</string>
-						<reference key="source" ref="288178953"/>
-						<reference key="destination" ref="1063068003"/>
+						<reference key="source" ref="162169812"/>
+						<reference key="destination" ref="329557607"/>
 					</object>
 					<int key="connectionID">475</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">setLibraryLocation:</string>
-						<reference key="source" ref="288178953"/>
-						<reference key="destination" ref="1023961764"/>
+						<reference key="source" ref="162169812"/>
+						<reference key="destination" ref="659891338"/>
 					</object>
 					<int key="connectionID">476</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">iTunesLibraryLocationMenuItem</string>
-						<reference key="source" ref="288178953"/>
-						<reference key="destination" ref="1023961764"/>
+						<reference key="source" ref="162169812"/>
+						<reference key="destination" ref="659891338"/>
 					</object>
 					<int key="connectionID">477</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">enabled: iTunesLibraryLocationMenuItemEnabled</string>
-						<reference key="source" ref="1023961764"/>
-						<reference key="destination" ref="288178953"/>
+						<reference key="source" ref="659891338"/>
+						<reference key="destination" ref="162169812"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="1023961764"/>
-							<reference key="NSDestination" ref="288178953"/>
+							<reference key="NSSource" ref="659891338"/>
+							<reference key="NSDestination" ref="162169812"/>
 							<string key="NSLabel">enabled: iTunesLibraryLocationMenuItemEnabled</string>
 							<string key="NSBinding">enabled</string>
 							<string key="NSKeyPath">iTunesLibraryLocationMenuItemEnabled</string>
@@ -480,7 +484,7 @@
 							<reference ref="1046388886"/>
 							<reference ref="1056857174"/>
 							<reference ref="342932134"/>
-							<reference ref="493771298"/>
+							<reference ref="501544025"/>
 						</object>
 						<reference key="parent" ref="694149608"/>
 					</object>
@@ -577,36 +581,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">449</int>
-						<reference key="object" ref="493771298"/>
+						<reference key="object" ref="501544025"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="269324606"/>
+							<reference ref="631738477"/>
 						</object>
 						<reference key="parent" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">450</int>
-						<reference key="object" ref="269324606"/>
+						<reference key="object" ref="631738477"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1023961764"/>
-							<reference ref="1063068003"/>
+							<reference ref="659891338"/>
+							<reference ref="329557607"/>
 						</object>
-						<reference key="parent" ref="493771298"/>
+						<reference key="parent" ref="501544025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">452</int>
-						<reference key="object" ref="1063068003"/>
-						<reference key="parent" ref="269324606"/>
+						<reference key="object" ref="329557607"/>
+						<reference key="parent" ref="631738477"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">453</int>
-						<reference key="object" ref="1023961764"/>
-						<reference key="parent" ref="269324606"/>
+						<reference key="object" ref="659891338"/>
+						<reference key="parent" ref="631738477"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">454</int>
-						<reference key="object" ref="288178953"/>
+						<reference key="object" ref="162169812"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</object>
@@ -680,7 +684,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{569, 641}, {191, 23}}</string>
+					<string>{{623, 641}, {191, 23}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{596, 852}, {216, 23}}</string>

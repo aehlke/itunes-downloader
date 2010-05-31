@@ -138,7 +138,7 @@ def main():
     
     if config.get_config_option('iTunesManagesMyLibrary') \
             or not config.get_config_option('iTunesLibraryLocation') \
-            or not os.path.exists(config.get_config_options('iTunesLibraryLocation')):
+            or not os.path.exists(config.get_config_option('iTunesLibraryLocation')):
         download_dir_path = tempfile.mkdtemp(prefix='tmp3')
     else:
         download_dir_path = config.get_config_option('iTunesLibraryLocation')
@@ -147,19 +147,22 @@ def main():
     print 'Downloading archive...'
     archive_name = download(url, download_dir_path)
     archive_path = os.path.join(download_dir_path, archive_name)
+    #import pdb;pdb.set_trace()
 
     # extract it, using the 'e' ruby script, to the download directory
     print 'Extracting archive...'
     if not config.get_config_option('iTunesManagesMyLibrary'):
         # move the archive into a subdir first in case it doesn't contain a directory
-        new_dir_path = os.splitext(archive_path)[0]
+        new_dir_path = os.path.splitext(archive_path)[0]
         os.makedirs(new_dir_path)
         shutil.move(archive_path, new_dir_path)
         archive_path = os.path.join(new_dir_path, archive_name)
-
+        new_cwd = new_dir_path
+    else:
+        new_cwd = download_dir_path
     try:
         ret_code = subprocess.call('"'+os.path.join(cwd, 'e')+'"' +\
-                ' ' + archive_name, cwd=download_dir_path, shell=True)
+                ' ' + archive_name, cwd=new_cwd, shell=True)
         if ret_code < 0:
             print >>sys.stderr, 'Child was terminated by signal', -ret_code
             shutil.rmtree(download_dir_path)
@@ -214,7 +217,7 @@ def main():
 
     print 'Done!'
 
-    exit(0)
+    #exit(0)
 
 
 

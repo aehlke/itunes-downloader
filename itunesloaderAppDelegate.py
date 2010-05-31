@@ -18,14 +18,17 @@ import os
 import config
 
 def osascript(script, *args):
-    cmd = '/usr/bin/osascript -e \'' + cmd_text + '\''
-    p = subprocess.Popen(['arch', '-i386', 'osascript', '-e', script] +
+    #cmd = '/usr/bin/osascript -e \'' + script + '\''
+    #p = subprocess.Popen(['arch', '-i386', 'osascript', '-e', script] +
+    p = subprocess.Popen(['arch', '-i386', '/usr/bin/osascript', '-e', script] +
             [unicode(arg) for arg in args],
             stdout=subprocess.PIPE, stderr=subprocess.PIPE)#cmd, shell=True)
-    err = p.wait()
-    if err:
-        raise RuntimeError(err, p.stderr.read()[:-1].decode('utf8'))
-    return p.stdout.read()[:-1].decode('utf8')
+    #err = p.wait()
+    (stdout, stderr) = p.communicate()
+    #if err:
+    #    raise RuntimeError(err, p.stderr.read()[:-1].decode('utf8'))
+    #return p.stdout.read()[:-1].decode('utf8')
+    return stdout[:-1].decode('utf8')
     
 
 
@@ -76,5 +79,6 @@ class itunesloaderAppDelegate(NSObject):
             
             term_cmd = u'python \\"' + script_path + u'\\" \\"' + url + u'\\"'
             osascript_cmd = u'tell application "Terminal" to do script "' + term_cmd + '"'
-            osascript(osascript_cmd)
+            ret = osascript(osascript_cmd)
+            NSLog(unicode(ret))
             osascript(u'tell application "Terminal" to activate')
