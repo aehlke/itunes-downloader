@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,12 +279,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>20</integer>
+									<integer>10</integer>
+									<integer>7</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 81}, {186, 445}}</string>
+							<string>{{0, 0}, {186, 445}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -317,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>main.py</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,22 +328,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>main.py</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>B82BC13D11B2E27A00C8B0FE</string>
+										<string>B82BC14C11B2F71200C8B0FE</string>
 										<key>history</key>
 										<array>
-											<string>B87CEEB4110843DC00C4D1EA</string>
-											<string>B87CEEB5110843DC00C4D1EA</string>
 											<string>B87CEEB6110843DC00C4D1EA</string>
-											<string>B82BC12411B2E17A00C8B0FE</string>
-											<string>B82BC12511B2E17A00C8B0FE</string>
 											<string>B82BC12611B2E17A00C8B0FE</string>
-											<string>B82BC12711B2E17A00C8B0FE</string>
 											<string>B82BC13B11B2E27A00C8B0FE</string>
-											<string>B82BC13C11B2E27A00C8B0FE</string>
+											<string>B82BC14511B2F71200C8B0FE</string>
+											<string>B82BC14611B2F71200C8B0FE</string>
+											<string>B82BC14711B2F71200C8B0FE</string>
+											<string>B82BC14811B2F71200C8B0FE</string>
+											<string>B82BC14911B2F71200C8B0FE</string>
+											<string>B82BC14A11B2F71200C8B0FE</string>
+											<string>B82BC14B11B2F71200C8B0FE</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -362,8 +366,6 @@
 							<string>260pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -540,6 +542,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>B82BC14E11B2F71200C8B0FE</string>
+		<string>B82BC14F11B2F71200C8B0FE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>B87CEE831108407D00C4D1EA</string>
 		<string>/Users/jehlke/workspace/pyobjc/itunesloader/itunesloader.xcodeproj</string>
@@ -912,7 +917,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>B8EA6D6D110912A400203C30</string>
+				<string>B82BC14D11B2F71200C8B0FE</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

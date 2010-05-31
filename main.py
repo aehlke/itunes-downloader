@@ -11,10 +11,15 @@ import objc
 import Foundation
 import AppKit
 
-from PyObjCTools import AppHelper
+from PyObjCTools import AppHelper, NibClassBuilder
 
 # import modules containing classes required to start application and load MainMenu.nib
 import itunesloaderAppDelegate
 
-# pass control to AppKit
-AppHelper.runEventLoop()
+import controller
+
+
+
+if __name__ == '__main__':
+    # pass control to AppKit
+    AppHelper.runEventLoop()

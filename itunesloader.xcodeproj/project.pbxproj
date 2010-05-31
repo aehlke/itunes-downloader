@@ -30,6 +30,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B82BC10F11B2E07100C8B0FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B82BC10E11B2E07100C8B0FE /* icon.png */; };
 		B82BC13211B2E1A700C8B0FE /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B82BC13111B2E1A700C8B0FE /* icon.icns */; };
+		B82BC15511B2F81B00C8B0FE /* controller.py in Resources */ = {isa = PBXBuildFile; fileRef = B82BC15411B2F81B00C8B0FE /* controller.py */; };
+		B82BC1BB11B318DA00C8B0FE /* config.py in Resources */ = {isa = PBXBuildFile; fileRef = B82BC1BA11B318DA00C8B0FE /* config.py */; };
 		B87CEEC511084C0A00C4D1EA /* addToITunesLibrary in Resources */ = {isa = PBXBuildFile; fileRef = B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */; };
 		B87CEEC611084C0A00C4D1EA /* downloadtoitunes.py in Resources */ = {isa = PBXBuildFile; fileRef = B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */; };
 		B87CEEC711084C0A00C4D1EA /* e in Resources */ = {isa = PBXBuildFile; fileRef = B87CEEC411084C0A00C4D1EA /* e */; };
@@ -51,6 +53,8 @@
 		8D1107320486CEB800E47090 /* Download to iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Download to iTunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82BC10E11B2E07100C8B0FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B82BC13111B2E1A700C8B0FE /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		B82BC15411B2F81B00C8B0FE /* controller.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = controller.py; sourceTree = "<group>"; };
+		B82BC1BA11B318DA00C8B0FE /* config.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
 		B87CEEC211084C0A00C4D1EA /* addToITunesLibrary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addToITunesLibrary; sourceTree = "<group>"; };
 		B87CEEC311084C0A00C4D1EA /* downloadtoitunes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = downloadtoitunes.py; sourceTree = "<group>"; };
 		B87CEEC411084C0A00C4D1EA /* e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = e; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				32CA4F630368D1EE00C91783 /* itunesloader_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				77631A3E0C0748CF005415CB /* main.py */,
+				B82BC15411B2F81B00C8B0FE /* controller.py */,
+				B82BC1BA11B318DA00C8B0FE /* config.py */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 				B87CEEC711084C0A00C4D1EA /* e in Resources */,
 				B82BC10F11B2E07100C8B0FE /* icon.png in Resources */,
 				B82BC13211B2E1A700C8B0FE /* icon.icns in Resources */,
+				B82BC15511B2F81B00C8B0FE /* controller.py in Resources */,
+				B82BC1BB11B318DA00C8B0FE /* config.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

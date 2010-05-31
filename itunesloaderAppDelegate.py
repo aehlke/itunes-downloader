@@ -14,19 +14,57 @@ import sys
 import os
 #import appscript
 
-def osascript(cmd_text):
+#import controller
+import config
+
+def osascript(script, *args):
     cmd = '/usr/bin/osascript -e \'' + cmd_text + '\''
-    p = subprocess.Popen(cmd, shell=True)
+    p = subprocess.Popen(['arch', '-i386', 'osascript', '-e', script] +
+            [unicode(arg) for arg in args],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE)#cmd, shell=True)
+    err = p.wait()
+    if err:
+        raise RuntimeError(err, p.stderr.read()[:-1].decode('utf8'))
+    return p.stdout.read()[:-1].decode('utf8')
+    
+
+
+def prompt_dialog(query, default=''):
+    '''prompts the user for text input and returns string response, or None if Cancel.'''
+    #tell application "System Events"
+    #     activate
+    #end tell
+    script = """on run {querystr, defstr}
+                tell application "System Events"
+                     display dialog querystr default answer defstr buttons {"Cancel", "OK"} default button 2
+                end tell
+                if button returned of the result is equal to "OK" then
+                   return text returned of the result
+                else
+                   return ""
+                end if
+                end run"""
+    ret = osascript(script, query, default)
+    return ret
+    
+
 
 class itunesloaderAppDelegate(NSObject):
+    #iTunesManagesMyLibrary = objc.ivar()
     def applicationDidFinishLaunching_(self, sender):
-        NSLog("Application did finish launching.")
+        #NSLog("Application did finish launching.")
         NSApp.setServicesProvider_(self)
 
     @objc.signature('v@:@@o^@')
     def doString_userData_error_(self, pboard, userData, error):
         # download the archive and add to itunes
         pboardString = pboard.stringForType_(NSStringPboardType)
+
+        iTunesManagesMyLibrary = config.get_config_option('iTunesManagesMyLibrary')
+        NSLog(str(iTunesManagesMyLibrary))
+        #NSLog(dir(controller).__repr__())
+        return
+        
         #NSLog(pboardString)
         #NSLog(u'%s' % pboardString)
         if pboardString[:7] in ['http://', 'https:/']:
