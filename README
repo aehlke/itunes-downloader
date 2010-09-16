@@ -1,0 +1,12 @@
+Disclaimer!
+I cobbled together this script without really knowing anything about
+Objective-C, PyObjC or Cocoa, so it's a messy hack. I don't normally do Mac
+dev (at least not native Mac stuff) so I didn't worry about doing everything
+exactly right and clean from the start, I just wanted to get this done in a
+weekend.
+
+In short, the code is horrible.
+
+Sorry about the xcode droppings - I'd keep them out, but I don't want to
+have to figure out how to replicate the xcode environment again in the
+future since I don't use xcode for anything other than this.
